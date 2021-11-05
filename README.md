@@ -8,7 +8,8 @@ A Simple Flappy Bird Game Using Python
 
 ## Run
 - Run the Following Command 
-    python flappy.py
+ 
+    `python flappy.py`
 
 ## Report build issues
 - You can reach me via [Telegram](https://t.me/Atom_Yr)
