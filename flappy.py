@@ -28,7 +28,7 @@ def welcomeScreen():
                 pygame.quit()
                 sys.exit()
 
-            elif event.type==KEYDOWN and (event.key==K_SPACE or event.key == K_UP):
+            elif event.type==KEYDOWN and event.key in (K_SPACE, K_UP):
                 return
             else:
                 SCREEN.blit(GAME_SPRITES['background'], (0, 0))    
@@ -72,7 +72,7 @@ def mainGame():
             if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
                 pygame.quit()
                 sys.exit()
-            if event.type == KEYDOWN and (event.key == K_SPACE or event.key == K_UP):
+            if event.type == KEYDOWN and event.key in (K_SPACE, K_UP):
                 if playery > 0:
                     playerVelY = playerFlapAccv
                     playerFlapped = True
